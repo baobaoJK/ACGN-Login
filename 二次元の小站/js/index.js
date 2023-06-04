@@ -9,11 +9,11 @@ document.getElementById("login-button").addEventListener("click", function () {
     else if (password == "") {
         alert("请输入密码");
     }
-    else if (username != "admin" && password != "123456") {
-        alert("用户名或密码错误");
+    else if (username == "admin" && password == "123456") {
+        alert("登录成功");
     }
     else {
-        alert("登录成功");
+        alert("用户名或密码错误");
     }
 });
 
