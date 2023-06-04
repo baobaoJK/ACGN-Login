@@ -1,0 +1,154 @@
+@keyframes login-box {
+    0% {
+        left: -400px;
+    }
+
+    50% {
+        left: -400px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes background {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+html,
+body,
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.login {
+    display: flex;
+    width: 1280px;
+    height: 720px;
+    box-shadow: 4px 4px 8px rgb(159, 159, 159, 0.7);
+    background-color: white;
+    overflow: hidden;
+}
+
+.login .login-form-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(400px - 128px);
+    height: calc(100% - 128px);
+    background-color: white;
+    padding: 64px;
+    animation: login-box 2s;
+}
+
+.login .login-form-box .login-title {
+    margin: 0 0 64px 0;
+    font-size: 32px;
+}
+
+.login .login-form-box .login-sub-title {
+    margin: 0 0 16px 0;
+    font-size: 24px;
+}
+
+.login .login-form-box .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.login .login-form-box .login-form input[type="text"],
+.login .login-form-box .login-form input[type="password"] {
+    width: 260px;
+    height: 32px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    padding: 6px 12px;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    background-color: #EDEDED;
+    outline: none;
+    transition: all 0.5s;
+}
+
+.login .login-form-box .login-form input[type="text"]:focus,
+.login .login-form-box .login-form input[type="password"]:focus {
+    border: 1px solid rgb(0, 174, 255);
+}
+
+.login .login-form-box .login-form .remember-box {
+    display: flex;
+    width: 280px;
+    height: 32px;
+}
+
+.login .login-form-box .login-form input[type="checkbox"] {
+    margin: 4px 4px 0 0;
+    width: 16px;
+    height: 16px;
+}
+
+.login .login-form-box .login-form input[type="button"] {
+    margin-top: 80px;
+    border: 2px solid #EDEDED;
+    border-radius: 16px;
+    background-color: transparent;
+    width: 64px;
+    height: 64px;
+    outline: none;
+    background: url("../images/login-button.png") center center no-repeat;
+    background-size: 32px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.login .login-form-box .login-form input[type="button"]:hover {
+    opacity: 0.5;
+    border: 2px solid rgb(0, 174, 255);
+    background: url("../images/login-button-hover.png") center center no-repeat;
+    background-size: 32px;
+}
+
+.login .login-form-box .link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.login .login-form-box .link a {
+    margin-bottom: 8px;
+    outline: none;
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+.login .login-form-box .link a:hover {
+    color: rgb(0, 174, 255);
+}
+.login .login-background {
+    width: 880px;
+    height: 100%;
+    animation: background 2s;
+}
+
+.login .login-background img {
+    width: 100%;
+    height: 100%;
+}
