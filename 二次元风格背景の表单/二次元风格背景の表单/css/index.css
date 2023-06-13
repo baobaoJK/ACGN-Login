@@ -1,0 +1,98 @@
+/* 动画 */
+@keyframes bg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes title {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+html,
+body,
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    min-width: 1600px;
+}
+
+/* 背景 */
+.background {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/index.jpg") no-repeat center;
+    background-size: cover;
+
+    animation: bg 0.5s;
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.index .title {
+    letter-spacing: 12px;
+    font-size: 36px;
+    color: white;
+    animation: title 1s;
+}
+
+.index .link {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    opacity: 0;
+    animation: title 1s;
+    animation-delay: 0.8s;
+    animation-fill-mode: forwards;
+}
+
+.index .link a {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.index .link a:hover {
+    color: rgb(255, 125, 147);
+}
+
+.index .link a::before {
+    position: absolute;
+    left: -22px;
+    bottom: -8px;
+    content: '';
+    width: 0px;
+    height: 2px;
+    background-color: rgb(255, 125, 147);
+    transition: all 0.5s;
+}
+
+.index .link a:hover::before {
+    width: 100px;
+}

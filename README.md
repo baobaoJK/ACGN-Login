@@ -1,36 +1,48 @@
-# 二次元の小站登录页面
-
-名称：二次元の小站登录页面
+# ACGN 项目仓库
 
 作者：KSaMar
 
-日期：2023-6-4
-
-描述：一个简洁好看的二次元登陆页面
+简介：一个关于 ACGN 页面项目的仓库
 
 
 
-## 开发环境
+# 开发环境
 
 网页制作工具：VSCode
 
 
 
-## 简介
-
-一个简单的前端登录页面，配合 JavaScript 实现了随机登录背景
-
-可自行添加背景图片，大小为 880px x 720px
+# 项目图片
 
 
 
-## 项目图片
+## 二次元の小站
 
-![登录页面.png](images/登录页面.png)
+![二次元の小站.png](二次元の小站/images/登录页面.png)
 
 
 
-## Bilibili
+预览视频 [Bilibili](https://www.bilibili.com/video/BV1yL411v7zJ)
+
+## 二次元风格背景の表单
+
+### 登录页面
+
+![二次元风格背景の表单](二次元风格背景の表单/images/login.png)
+
+
+
+### 注册页面
+
+![二次元风格背景の表单](二次元风格背景の表单/images/register.png)
+
+
+
+预览视频 [Bilibili](https://www.bilibili.com/video/BV1bX4y1b7fq)
+
+
+
+# Bilibili
 
 欢迎在 B 站上关注我
 

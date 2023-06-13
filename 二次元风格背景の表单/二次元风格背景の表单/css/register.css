@@ -1,0 +1,180 @@
+/* 动画 */
+@keyframes bg {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes register {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+html,
+body,
+.main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+    min-width: 1600px;
+
+    overflow: hidden;
+}
+
+/* 背景 */
+.background {
+    display: flex;
+    flex-direction: row-reverse;
+    /* 根据图片需求可以修改表单所处位置 */
+    width: 100%;
+    height: 100vh;
+    background: url("../images/register.jpg") no-repeat center;
+    background-size: cover;
+
+    animation: bg 0.5s;
+}
+
+/* 标题 */
+.title {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 6px;
+    text-decoration: none;
+    color: white;
+    z-index: 1;
+}
+
+/* 登录表单域 */
+.register-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 600px;
+    height: 100%;
+    background: rgb(143, 132, 100, .4);
+    backdrop-filter: blur(16px);
+
+    animation: register 1.2s;
+}
+
+.register-block .register-title {
+    font-size: 32px;
+    color: white;
+}
+
+.register-block .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.register-block .register-form input {
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    padding: 0px 8px;
+    text-align: center;
+    transition: all 0.5s;
+    margin-bottom: 32px;
+}
+
+.register-block .register-form input::placeholder {
+    color: white !important;
+}
+
+.register-block .register-form input:focus {
+    border-bottom: 1px solid rgb(255, 125, 147);
+}
+
+.register-block .register-form .code-pane {
+    width: 316px;
+    border-bottom: 1px solid white;
+    margin-bottom: 32px;
+    transition: all 0.5s;
+}
+
+.register-block .register-form .code-pane:focus-within {
+    border-bottom: 1px solid rgb(255, 125, 147);
+}
+
+.register-block .register-form .code-pane .code {
+    width: 60%;
+    border: none;
+    margin: 0;
+}
+
+.register-block .register-form .code-pane .code-button {
+    width: 30%;
+    margin: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.register-block .register-form .code-pane .code-button:hover {
+    opacity: 0.5;
+}
+
+.register-block .register-form .register-button {
+    background-color: rgb(255, 125, 147);
+    width: 320px;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.register-block .register-form .register-button:hover {
+    opacity: 0.5;
+}
+
+.register-block .link {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.register-block .link a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+.register-block .link a:hover {
+    color: rgb(255, 125, 147);
+}
